@@ -1,0 +1,33 @@
+----------------------------------------------------------
+	______ _____ ____________     ____  _    _ ____________
+ |  ____|_   _|___  /___  /    |  _ \| |  | |___  /___  /
+ | |__    | |    / /   / /_____| |_) | |  | |  / /   / / 
+ |  __|   | |   / /   / /______|  _ <| |  | | / /   / /  
+ | |     _| |_ / /__ / /__     | |_) | |__| |/ /__ / /__ 
+ |_|    |_____/_____/_____|    |____/ \____//_____/_____|
+                                                         
+----------------------------------------------------------
+
+Create one or more react components that show the numbers from 1 to a limit that is specified by a prop (e.g. 100).
+
+The numbers should be translated as follows:
+	1. For multiples of 3 return "Fizz"
+	2. For multiples of 5 return "Buzz"
+	3. For multiples of 3 and 5 return "FizzBuzz"
+	4. If none of the other rules apply, return the number itself
+
+After that extend your code as follows:
+	1. Create a HOC that accepts your main component and the FizzBuzz data
+	2. Use a render prop to render the translated numbers
+
+----------------
+Example:
+	- limit = 20	
+	- content = [1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, ......]
+	
+----------------
+General Requirements:
+    - Create a npm/yarn project 
+    - Free choice of dependencies, but keep it simple
+		- TypeScript is a big plus
+    - Your code should be fully (unit) tested!
