@@ -1,23 +1,50 @@
 import React, { Component } from "react";
-
+import FizzBuzz from "./components/FizzBuzz/FizzBuzz.js";
+import Content from "./components/Content/Content.js";
 class App extends Component {
-  state = {};
+  state = {
+    array: [],
+    limit: 20,
+    counter: 1
+  };
 
-  fizzBuzz = num => {
-    if (num % 3 === 0 && num % 5 === 0) {
-      return "fizzbuzz";
-    } else if (num % 5 === 0) {
-      return "buzz";
-    } else if (num % 3 === 0) {
-      return "fizz";
-    } else {
-      return num;
+  decrement = () => {
+    if (this.state.counter > 1) {
+      this.setState({ counter: this.state.counter - 1 });
     }
   };
 
+  increment = () => {
+    if (this.state.counter < this.state.limit) {
+      this.setState({ counter: this.state.counter + 1 });
+    }
+  };
+
+  renderContent = () => {
+    const array = [...this.state.array];
+    let counter = this.state.counter;
+    const limit = this.state.limit;
+    for (let i = 1; i <= limit; i++) {
+      if (counter === i) {
+        const TextComponent = FizzBuzz(Content, i);
+        array.push(<TextComponent key={i} />);
+      }
+    }
+    return array;
+  };
+
   render() {
-    console.log(this.fizzBuzz(20));
-    return <div className="App" />;
+    return (
+      <React.Fragment>
+        {this.renderContent()}
+        <button onClick={this.decrement} className="">
+          -
+        </button>
+        <button onClick={this.increment} className="">
+          +
+        </button>
+      </React.Fragment>
+    );
   }
 }
 
