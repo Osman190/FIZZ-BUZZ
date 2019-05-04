@@ -37,6 +37,7 @@ class App extends Component {
     return (
       <React.Fragment>
         {this.renderContent()}
+        <div />
         <button onClick={this.decrement} className="">
           -
         </button>
