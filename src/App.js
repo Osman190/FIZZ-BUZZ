@@ -36,8 +36,13 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <h1>Fizz-Buzz HOC App</h1>
+        <p>
+          the App runs on algorithm Function dose some math it take the rendered value and multiples
+          of 3 and 5 return "FizzBuzz"{" "}
+        </p>
         {this.renderContent()}
-        <div />
+        <br />
         <button onClick={this.decrement} className="">
           -
         </button>

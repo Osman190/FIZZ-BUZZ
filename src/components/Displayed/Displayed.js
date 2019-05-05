@@ -1,10 +1,10 @@
 import React from "react";
 
-const Displayed = (InnerComponent, num) => {
-  const displayed = () => {
+const displayed = (InnerComponent, num) => {
+  const Displayed = () => {
     return <InnerComponent value={String(num)} />;
   };
-  return displayed;
+  return Displayed;
 };
 
-export default Displayed;
+export default displayed;

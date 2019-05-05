@@ -6,13 +6,13 @@ import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("Test WithString Component", () => {
+describe("Test Displayed Component", () => {
   it("is truthy", () => {
     expect(Displayed).toBeTruthy();
     expect(Content).toBeTruthy();
   });
 
-  it("render Text component", () => {
+  it("render Content component", () => {
     const TextWithString = Displayed(Content, "Test");
     const text = Enzyme.shallow(<TextWithString />);
     expect(text.find(Content)).toBeTruthy();

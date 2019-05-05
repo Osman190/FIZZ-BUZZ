@@ -6,7 +6,7 @@ import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("Test WithString Component", () => {
+describe("Test FizzBuzz Component", () => {
   it("is truthy", () => {
     expect(FizzBuzz).toBeTruthy();
     expect(Content).toBeTruthy();
