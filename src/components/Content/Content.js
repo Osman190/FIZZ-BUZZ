@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Content = ({ value }) => {
-  return <div className="text">{value}</div>;
+const Content = props => {
+  return <div className="text">{props.children.props.value}</div>;
 };
 
 Content.propTypes = {
-  value: PropTypes.string
+  props: PropTypes.string
 };
 
 export default Content;

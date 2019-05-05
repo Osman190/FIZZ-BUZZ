@@ -1,7 +1,7 @@
 # FUZZ=BUZZ React 
 
 ## React Client Side Development:
-fizz-buzz simple app is a client-side app created with `npx create-react-app` and built with HOC pattern and fully unit tested with react script test and algorithms.
+fizz-buzz simple app is a client-side app created with `npx create-react-app` and built with HOC pattern and render prop component, fully unit tested with react script test and algorithms.
 
 #### Algorithm:
 	1. For multiples of 3 return "Fizz"
