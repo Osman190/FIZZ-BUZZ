@@ -4,7 +4,7 @@ import Content from "./components/Content/Content.js";
 class App extends Component {
   state = {
     array: [],
-    limit: 20,
+    limit: 50,
     counter: 1
   };
 
@@ -36,10 +36,16 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Fizz-Buzz HOC App</h1>
+        <h1>Fizz-Buzz Math</h1>
         <p>
-          the App runs on algorithm Function dose some math it take the rendered value and multiples
-          of 3 and 5 return "FizzBuzz"{" "}
+          The Numbers limit are{" "}
+          <strong>
+            <b>50</b>
+          </strong>{" "}
+          and displayed depending on Math if the number multiples of 3 shows instead{" "}
+          <strong>Fizz</strong>, if the number multiples of shows instead <strong>Buzz</strong>, if
+          the number multiples of 3 and 5 shows instead <strong>FizzBuzz</strong> or if the number
+          none of the other rules shows the number itself.
         </p>
         {this.renderContent()}
         <br />
