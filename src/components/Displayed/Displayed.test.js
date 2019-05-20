@@ -17,10 +17,7 @@ describe("Test Displayed Component", () => {
     const text = Enzyme.shallow(<TextWithString />);
     expect(text.find(Content)).toBeTruthy();
     expect(
-      text
-        .find(Content)
-        .render()
-        .text()
+      text.render().text()
     ).toEqual("Test");
   });
 });
